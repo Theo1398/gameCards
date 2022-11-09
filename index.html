@@ -12,35 +12,38 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="logo">Game Cards</h1>
+            <h1 class="logo text-center">Game Cards</h1>
         </div>
     </header>
     <main class="main">
         <section class="container">
             <div class="row">
                 <form action="#" class="form">
-                    <div class="mb-3">
+                    <div class="row">
                         <div class="col-6">
-                            <!-- for and name have to match with a label and input -->
-                            <label for="gameName" class="form-label">Name of Game</label>
-                            <input type="text" name="gameName" id="gameName" value="" placeholder="Name of Game" class="form-control" required />
+                            <div class="mb-3">
+                                <label for="gameName" class="form-label">Name of game</label>
+                                <input type="text" name="gameName" id="gameName" value="" placeholder="Name of game" class="form-control" required/>
+                            </div>
                         </div>
                         <div class="col-6">
-                            <label for="category" class="form-label">Game Category</label>
-                            <select name="category" id="category" class="form-select">
-                                <option value="">Choose...</option>
-                                <option value="board">Board Game</option>
-                                <option value="card">Card Game</option>
-                                <option value="outside">Outside Game</option>
-                                <option value="video">Video Game</option>
-                            </select>
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Game Category</label>
+                                <select name="category" id="category" class="form-select">
+                                    <option value="">Choose...</option>
+                                    <option value="board">Board game</option>
+                                    <option value="card">Card game</option>
+                                    <option value="outside">Outside game</option>
+                                    <option value="video">Video game</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="row">
                         <div class="col-6">
                             <div class="input-group">
-                                <label for="gameImage" class="input-group-text">Game Image</label>
-                                <input type="url" class="form-control" name="gameImage" id="gameImage" value="" placeholder="Image Address" />
+                                <span for="gameImage" class="input-group-text">Game Image</span>
+                                <input type="url" class="form-control" name="gameImage" value="" placeholder="Image Address" id="gameImage" />
                             </div>
                         </div>
                         <div class="col-6">
@@ -52,17 +55,17 @@
         </section>
         <section class="container">
             <div class="row" id="gameCards">
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <div class="card border-danger">
-                        <div class="card-header text-danger">
-                            <h2 class="h3">Title</h2>
+                        <div class="card-header">
+                            <h2 class="h3 text-danger">Title</h2>
                         </div>
-                        <img src="https://via.placeholder.com/50x50" alt="placeholder" class="img-fluid placeholder-image" />
+                        <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid" />
                         <div class="card-body">
-                            <p class="card-text">Category <span id="gameCategory"></span></p>
+                            <p class="card-text text-danger">Category: <span id="gameCategory"></span></p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
